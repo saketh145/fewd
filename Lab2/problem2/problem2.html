@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            transition: 0.3s ease;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+            transform: translateY(-2px);
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        h1, h2, h3 {
+            color: #222;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        ol, ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 20px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        .social-media a:hover {
+            color: #007BFF;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#intro">Self Introduction</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#contactus">Contact</a>
+    </nav>
+    <section id="intro">
+        <h1>About Me</h1>
+        <p>My name is Saketharama. I am a student at Keshav Memorial Institute of Technology, currently in my third year, second semester. I am from Nagarkurnool and aspire to become a data scientist.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ol>
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+        </ol>
+    </section>
+    <section id="projects">
+        <h3>Projects</h3>
+        <ol>
+            <li>Thyroid Detection - <a href="https://github.com/saketh145/thyroid-ps">GitHub Link</a></li>
+            <li>Summarization Project - <a href="https://github.com/Jayanth-137/TextOrVideoSummarizer-G18-PS24/tree/main/WebApp">GitHub Link</a></li>
+            <li>Ransomware Detection - <a href="https://github.com/saketh145/thyroid-ps">GitHub Link</a></li>
+        </ol>
+    </section>
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>First place in Hackathon at Vasavi College of Engineering.</li>
+            <li>Reached INMO stage in 10th grade.</li>
+        </ul>
+    </section>
+    <section id="education">
+        <h2>My Education</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Year</th>
+                <th>CGPA/Percentage</th>
+                <th>Institution</th>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>2020</td>
+                <td>100%</td>
+                <td>Narayana Concept School</td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>2022</td>
+                <td>97.6%</td>
+                <td>Narayana College</td>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>2026</td>
+                <td>8.65</td>
+                <td>Keshav Memorial Institute of Technology</td>
+            </tr>
+        </table>
+    </section>
+    <section id="socialmedia">
+        <div class="social-media">
+            <p>Instagram: <a href="https://www.instagram.com/saketharamabadam/">Click here</a></p>
+        </div>
+    </section>
+    <section id="contactus">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <section class="marquee">
+        <span>Stay tuned for more updates.</span>
+    </section>
+</body>
+</html>

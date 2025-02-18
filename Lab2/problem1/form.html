@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      margin-top: 2%;
+    }
+    form {
+      background-color:rgb(221, 236, 250);
+      border-radius: 15px;
+      justify-content: center;
+      margin: auto;
+      width: 30%;
+      padding: 3%;
+    }
+    textarea {
+      width: 80%;
+      height: 20%;
+      margin-bottom: 15px;
+    }
+    input {
+      text-align: center;
+      margin-top:10px;
+      margin-bottom: 5px;
+    }
+    #phone input {
+      width: 80%;
+    }
+    #email input {
+      width: 80%;
+    }
+    #name input {
+      width: 80%;
+    }
+  </style>
+  <body>
+    <form action="" class="form-example">
+      <h2>Feedback Form</h2>
+      <div id="name">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" placeholder="name" />
+      </div>
+
+      <div id="email">
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" placeholder="email" />
+      </div>
+      <div id="phone">
+        <label for="phone">Enter your phone: </label>
+        <input type="tel" name="phone" id="phone" placeholder="phone" />
+      </div>
+
+      <div>
+        <p>Any questions regrading the product:</p>
+        <textarea name="questions" id="questions" required></textarea>
+      </div>
+
+      <div>
+        <label><span style="font-size: large;">Select a Rating:</span></label>
+        <select required>
+          <option value="">click here to select</option>
+          <option>1 - Poor</option>
+          <option>2 - Ok</option>
+          <option>3 - Good</option>
+          <option>4 - Very Good</option>
+          <option>5 - Excellent</option>
+        </select>
+      </div>
+
+      <div>
+        <p><label for="w3review">Please Write your Comments here:</label></p>
+        <textarea name="comments" id="comments"></textarea>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
