@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Modern Ecommerce</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Modern Ecommerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">About Us</h1>
+            <p class="lead animate__animated animate__fadeInUp">Learn more about our mission, vision, and values.</p>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Our Story</h2>
+                <p class="lead">Founded in 2024, Modern Ecommerce is dedicated to providing high-quality products and exceptional customer service. Our journey began with a simple idea: to create a seamless shopping experience for everyone.</p>
+                <p>We believe in innovation, sustainability, and customer satisfaction. Our team works tirelessly to bring you the best products at affordable prices.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3zWgunIoXjmsVWbVlrO4en/eed60c3c44a616d3a18c007a578e9416/GettyImages-1303466068.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000" class="img-fluid rounded" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Our Mission</h2>
+                    <p>Our mission is to empower customers by offering innovative, high-quality products that enhance their lives. We strive to create a sustainable and inclusive shopping experience.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">Our Vision</h2>
+                    <p>We envision a world where everyone has access to the best products and services, delivered with care and integrity. We aim to be a global leader in e-commerce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="assets/team1.jpg" class="card-img-top rounded-circle w-50 mx-auto mt-4" alt="Team Member 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Saketha rama</h5>
+                        <p class="card-text">CEO & Founder</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="assets/team2.jpg" class="card-img-top rounded-circle w-50 mx-auto mt-4" alt="Team Member 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jayanth Karnati</h5>   
+                        <p class="card-text">Chief Marketing Officer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="assets/team3.jpg" class="card-img-top rounded-circle w-50 mx-auto mt-4" alt="Team Member 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rishi Kumar</h5>
+                        <p class="card-text">Head of Operations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2023 Modern Ecommerce. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#" class="text-white me-2">Facebook</a>
+                <a href="#" class="text-white me-2">Twitter</a>
+                <a href="#" class="text-white">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

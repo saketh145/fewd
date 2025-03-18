@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Modern Ecommerce</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Modern Ecommerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Our Gallery</h1>
+            <p class="lead animate__animated animate__fadeInUp">Explore our collection of stunning visuals.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery container my-5">
+        <div class="row">
+            <!-- Image 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT4nJdEMZUmlFINuSKv2R-aTRq6txSJsLKe1qtnJ-jf8Jjtseog3q95VGn4z3nnilP2dtnY2Cw_QWwrC-OhdNzaol3oOO-EyeOdaEIoHqhGLVVHTkyoNOhB" class="img-fluid rounded gallery-image" alt="Gallery Image 1">
+                    <div class="overlay">
+                        <p class="text-white">Smart Watch</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQKQX86giKVDsYUaGttyN4_B9l_XIS26WJg&s" class="img-fluid rounded gallery-image" alt="Gallery Image 2">
+                    <div class="overlay">
+                        <p class="text-white">Wireless Earbuds</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://cdn.mos.cms.futurecdn.net/UDwvkXvZDcnt62mthfxtFo-320-80.jpg" class="img-fluid rounded gallery-image" alt="Gallery Image 3">
+                    <div class="overlay">
+                        <p class="text-white">Gaming Laptop</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L.jpg" class="img-fluid rounded gallery-image" alt="Gallery Image 4">
+                    <div class="overlay">
+                        <p class="text-white">Smartphone</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://www.theaudiostore.in/cdn/shop/files/SonyWH-ULT900NULTWEARActiveNoise-CancelingWirelessHeadphonesblack01.jpg?v=1720808381" class="img-fluid rounded gallery-image" alt="Gallery Image 5">
+                    <div class="overlay">
+                        <p class="text-white">Headphones</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Image 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://camclinic.in/wp-content/uploads/2023/06/1653353121_1708099.jpg" class="img-fluid rounded gallery-image" alt="Gallery Image 6">
+                    <div class="overlay">
+                        <p class="text-white">Camera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2023 Modern Ecommerce. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#" class="text-white me-2">Facebook</a>
+                <a href="#" class="text-white me-2">Twitter</a>
+                <a href="#" class="text-white">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
